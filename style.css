@@ -23,10 +23,8 @@ body{
 }
 
 .jumbotron {
-  background-image:url('http://goo.gl/04j7Nn');
+  background-color:#dadada;
   height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .jumbotron .container {
