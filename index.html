@@ -1,80 +1,288 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<title>My Portfolio Page</title>
+<title></title>
 <meta charset="utf-8">
-<link rel="stylesheet" href="bootstrap.css">
-<link rel="stylesheet" type="text/css" href="style.css" >
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+<link rel="stylesheet" type="text/css" href="css/style.css" >
+<link href="http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two%7COpen+Sans:400,300,300italic,400italic,600,600italic,700,700italic&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css" media="screen" />
+<script type="text/javascript" src="fancybox/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="fancybox/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.2.1.pack.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("a.goods-form").fancybox({
+		"padding" : 20,
+		"imageScale" : false,
+		"overlayOpacity" : 0.8,
+		"hideOnContentClick" :false
+		});
+	});
+</script>
 </head>
 <body>
-<div class="nav">
+
+<div id="intro">
 	<div class="container">
-		<ul class="pull-right">
-			<li><a href="#">Name</a></li>
-			<li><a href="#">Browse</a></li>
-			<li><a href="#">Sign Up</a></li>
-			<li><a href="#">Log In</a></li>
-			<li><a href="#">Help</a></li>
-		</ul>
-	</div>
-</div>
-<div class="jumbotron">
-	<div class="container">
-		<h1>Find a place to stay.</h1>
-		<p>Rent from people in over 34,000 cities and 192 countries.</p>
-		<a href="#">Learn More</a>
-	</div>
-</div>
-<div class="neighborhood-guides">
-        <div class="container">
-            <h2>Neighborhood Guides</h2>
-            <p>Not sure where to stay? We've created neighborhood guides for cities all around the world.</p>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        
-                    </div>
-                    <div class="thumbnail">
-                        
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        
-                    </div>
-                    <div class="thumbnail">
-                        
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
-<div class="learn-more">
-	<div class="container">
-		<div class="row">
-		   <div class="col-md-4">
-			<h3>Travel</h3>
-			<p>From apartments and rooms to treehouses and boats: stay in unique spaces in 192 countries.</p>
-			<p><a href="#">See how to travel on Airbnb</a></p>
-		  </div>
-		  <div class="col-md-4">
-			<h3>Host</h3>
-			<p>Renting out your unused space could pay your bills or fund your next vacation.</p>
-			<p><a href="#">Learn more about hosting</a></p>
-		  </div>
-		  <div class="col-md-4">
-			<h3>Trust and Safety</h3>
-			<p>From Verified ID to our worldwide customer support team, we've got your back.</p>
-			<p><a href="#">Learn about trust at Airbnb</a></p>
-		  </div>
+		<div class="header">
+			<div class="logo">
+				<a href="#">
+				<img src="img/logo.png" title="iLikepet" alt="iLikepet"/>
+				</a>
+			</div>
+			<div class="nav">
+				<ul class="nav1">
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">About us</a></li>
+				</ul>
+				<ul class="nav2">
+					<li><a href="#">Lebensmittel</a></li>
+					<li><a href="#">Formula</a></li>
+					<li><a href="#">Uber UNS</a></li>
+					<li><a href="#">Preis</a></li>
+					<li><a href="#">Kontakt</a></li>
+				</ul>
+			</div>
 		</div>
-	 </div>
-</div> 
+		<div class="mdl-txt">
+			<p>
+			Der Hund ist hungrig?
+			Inh glucklich machen!
+			</p>
+			<p>
+			... Und Sie ein
+			Geschenk erhalten :)
+			</p>
+		</div>
+		<div class="button">
+			<div class="arrow">
+				<p>klicken sie hier</p>
+			</div>
+			<a class="btn" href="#">bestellen</a>
+			<span class="timer">
+				ereignis beendet in 4:20:22
+			</span>
+		</div>
+	</div>
+</div>
+<div id="intro-overlay"></div>
+<div id="services">
+	<div class="container">
+		<div class="header">
+			<p>
+			Spezielle "Pakete". Das Beste fur Sie.
+			</p>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 block">
+				<img src="img/kitty.jpg" alt="Kitty" title="Kitty">
+				<a class="btn goods-form" href="php/goods-form.php?img=kitty&name=kitty1&price=375">bestellen</a>
+			</div>
+			<div class="col-xs-3 block">
+				<img src="img/kitty.jpg" alt="Kitty" title="Kitty">
+				<a class="btn goods-form" href="php/goods-form.php?img=kitty&name=kitty2&price=274">bestellen</a>
+			</div>
+			<div class="col-xs-3 block">
+				<img src="img/kitty.jpg" alt="Kitty" title="Kitty">
+				<a class="btn goods-form" href="php/goods-form.php?img=kitty&name=kitty3&price=268">bestellen</a>
+			</div>
+			<div class="col-xs-3 block">
+				<img src="img/kitty.jpg" alt="Kitty" title="Kitty">
+				<a class="btn goods-form" href="php/goods-form.php?img=kitty&name=kitty4&price=314">bestellen</a>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div id="choose-us">
+	<div class="container">
+		<div class="header">
+			<p>
+			Warum wahlen Sie uns vor allem besser.
+			</p>
+		</div>
+		<div class="reasons row">
+			<div class="col-xs-2 reason r1">
+				<p class="upper">
+					Von Tierarzten<br>
+					empfohlen
+				</p>
+				<p class="lower">
+					geeignet fur allergische<br>
+					und snesible Hunde
+				</p>
+			</div>
+			<div class="col-xs-2 reason r2">
+				<p class="upper">
+					kein Soya
+				</p>
+				<p class="lower">
+					100%<br>
+					Straussenfleissch
+				</p>
+			</div>
+			<div class="col-xs-2 reason r3">
+				<p class="upper">
+					keine kunstlichen<br>
+					Konservierungsmittel
+				</p>
+				<p class="lower">
+					Weizenfrei
+				</p>
+			</div>
+			<div class="col-xs-2 reason r4">
+				<p class="upper">
+					Ausgeglichenes<br>
+					Verhaltnis von Omega
+				</p>
+				<p class="lower">
+					kein<br>
+					Scheweinefleisch
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="reviews">
+	<div class="container">
+		<div class="header">
+			<p>
+				Gaste zugelassen. 
+			</p>
+		</div>
+		<div class="person-container row">
+			<div class="person col-xs-4">
+				<p class="name">
+					Ingrid&nbsp;Braun
+				</p>
+				<p class="profession">
+					Hausfrau
+				</p>
+			</div>
+			<div class="person-text col-md-8">
+				<p class="screen">
+					Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese durcheinander warf um ein Musterbuch zu erstellen. Es hat nicht nur 5 Jahrhunderte überlebt, sondern auch in Spruch in die elektronische Schriftbearbeitung geschafft (bemerke, nahezu unverändert). Bekannt wurde es 1960, mit dem erscheinen von "Letraset", welches Passagen von Lorem Ipsum enhielt, so wie Desktop Software wie "Aldus PageMaker" - ebenfalls mit Lorem Ipsum.
+				</p>
+				<p class="mobile">
+					"Lorem Ipsum ist ein einfacher"
+				</p>
+			</div>
+		</div>
+		<div class="button-container">
+			<a class="btn" href="#">bestellen</a>
+		</div>
+	</div>
+</div>
+<div id="catalogs">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="header">
+			<p>
+			Unsere Lebensmittel katalog.
+			</p>
+		</div>
+		<div class="catalogs-container">
+			<div class="supplies">
+				<div class="arrow">
+					<p>klicken sie hier</p>
+				</div>
+				<a href="#">
+					<img src="img/supplies.png" alt="supplies" title="supplies">
+				</a>
+			</div>
+			<div class="catalog dog">
+				<p>Hund</p>
+				<span class="btn">
+					<a href="#">Geoffnet</a>
+				</span>
+			</div>
+			<div class="catalog cat">
+				<p>Katzenhaft</p>
+				<span class="btn">
+					<a href="#">Geoffnet</a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="nav">
+		<div class="container">
+			<div class="block foods">
+				<p>Lebensmittel</p>
+				<ul>
+					<li><a href="#">Lebensmittel</a></li>
+					<li><a href="#">Lebensmittel</a></li>
+					<li><a href="#">Lebensmittel</a></li>
+					<li><a href="#">Lebensmittel</a></li>
+					<li><a href="#">Lebensmittel</a></li>
+				</ul>
+			</div>
+			<div class="block formula">
+				<p>Formula</p>
+				<ul>
+					<li><a href="#">Formula</a></li>
+					<li><a href="#">Formula</a></li>
+					<li><a href="#">Formula</a></li>
+					<li><a href="#">Formula</a></li>
+				</ul>
+			</div>
+			<div class="block about-us">
+				<p>Uber uns</p>
+				<ul>
+					<li><a href="#">Uber uns</a></li>
+					<li><a href="#">Uber uns</a></li>
+					<li><a href="#">Uber uns</a></li>
+				</ul>
+			</div>
+			<div class="block price">
+				<p>Preis</p>
+				<span class="btn">
+					<a href="#">
+						Preis<br>
+						herunteriaden
+					</a>
+				</span>
+			</div>
+			<div class="block contacts">
+				<p>Kontakt</p>
+				<div class="social-media fb">
+					<a href="#">
+						Facebook.com
+					</a>
+				</div>
+				<div class="social-media email">
+					<a href="#">
+						Info@ilikepet.cz
+					</a>
+				</div>
+				<div class="btn">
+					<a href="#">
+						Kontaktieren
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<p class="copyrights">
+				2015 Copyright for iLikepet s.r.o.<br>
+				All rights reserved. Designed and developed by Brunn Creatives a.s.
+			</p>
+			<p class="terms">
+				<a href="#">
+					Terms of Use
+				</a>
+			</p>
+			<p class="license">
+				<a href="#">
+					License
+				</a>
+			</p>
+		</div>
+	</div>
+</div>
+<div id="catalogs-overlay"></div>
 </body>
 </html>
