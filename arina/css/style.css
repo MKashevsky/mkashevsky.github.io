@@ -109,6 +109,10 @@ font-size:20px;
 color:rgba(94,46,60, 0.8);
 }
 
+#gallery .albums{
+padding-top:40px;
+}
+
 #gallery .album{
 color:rgba(94,46,60, 0.8);
 }
@@ -120,4 +124,9 @@ color:rgba(94,46,60, 0.8);
 
 #contacts a{
 color:white;
+}
+
+#contacts .partner{
+float:left;
+margin-left:20px;
 }
