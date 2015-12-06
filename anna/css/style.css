@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+background:url(../img/main.jpg) no-repeat;
+background-size:contain;
+background-attachment:fixed;
+background-position:50% 0;
+}
+
+.container{
+padding:20px 0;
+}
+
+#header h1{
+color:white;
+text-transform:uppercase;
+background-color:rgba(136,0,21,0.8);
+border-radius:16px;
+padding:20px 40px;
+text-align:center;
+}
+
+#navigation .nav{
+list-style:none;
+text-align:center;
+border:3px solid blue;
+border-radius:16px;
+padding:5px;
+background:white;
+}
+
+#navigation .nav>li{
+padding:10px 20px;
+border-bottom:3px solid blue;
+font-size:24px;
+font-weight:600;
+}
+
+#navigation .nav>.last{
+border:none;
+}
+
+#navigation .nav>li a{
+color:grey;
+}
+
+#navogation a{
+padding:0;
+}
+
+#navigation a:hover,
+#navigation a:focus{
+background:transparent;
+text-decoration:underline;
+}
+
+#navigation .nav>li .on{
+color:#333;
+}
+
+#subnav{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+#content{
+padding:20px;
+background-color:rgba(221,221,221,0.8);
+border-radius:16px;
+font-size:18px;
+text-indent:15px;
+}
