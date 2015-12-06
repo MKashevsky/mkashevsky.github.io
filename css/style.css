@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-background:url(/img/pozadi.jpg) no-repeat;
+background:url(../img/Pozadi.jpg) no-repeat;
 background-size:cover;
 background-attachment:fixed;
 font-family: 'Courgette', cursive;
