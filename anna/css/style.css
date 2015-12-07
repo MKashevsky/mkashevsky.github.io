@@ -2,9 +2,8 @@
 /* CSS Document */
 body{
 background:url(../img/main.jpg) no-repeat;
-background-size:contain;
+background-size:cover;
 background-attachment:fixed;
-background-position:50% 0;
 }
 
 .container{
@@ -15,6 +14,7 @@ padding:20px 0;
 color:white;
 text-transform:uppercase;
 background-color:rgba(136,0,21,0.8);
+border: 1px solid white;
 border-radius:16px;
 padding:20px 40px;
 text-align:center;
@@ -23,25 +23,20 @@ text-align:center;
 #navigation .nav{
 list-style:none;
 text-align:center;
-border:3px solid blue;
-border-radius:16px;
-padding:5px;
-background:white;
 }
 
 #navigation .nav>li{
 padding:10px 20px;
-border-bottom:3px solid blue;
+margin-bottom:10px;
+border:1px solid white;
+border-radius:16px;
 font-size:24px;
+background-color:rgba(136,0,21,0.8);
 font-weight:600;
 }
 
-#navigation .nav>.last{
-border:none;
-}
-
 #navigation .nav>li a{
-color:grey;
+color:white;
 }
 
 #navogation a{
@@ -51,11 +46,10 @@ padding:0;
 #navigation a:hover,
 #navigation a:focus{
 background:transparent;
-text-decoration:underline;
 }
 
 #navigation .nav>li .on{
-color:#333;
+text-decoration:underline;
 }
 
 #subnav{
@@ -67,7 +61,12 @@ margin:0;
 #content{
 padding:20px;
 background-color:rgba(221,221,221,0.8);
+border:1px solid #333;
 border-radius:16px;
 font-size:18px;
 text-indent:15px;
+}
+
+#content .img-responsive{
+border:1px solid #333;
 }
